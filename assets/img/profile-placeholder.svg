@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 800 800">
+  <rect width="100%" height="100%" fill="#eaf6ff"/>
+  <g transform="translate(400,360)">
+    <circle r="120" fill="#dbefff" stroke="#b6e0ff" stroke-width="6" />
+    <text x="0" y="12" font-family="Inter, Arial" font-size="36" fill="#0356b8" text-anchor="middle">Biplap</text>
+  </g>
+</svg>
