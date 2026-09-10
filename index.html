@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Biplap Kushmi — Performance-focused Digital Marketer in Kathmandu, Nepal</title>
+  <title>Biplap Kushmi — Digital Marketer</title>
   <meta name="description" content="Biplap Kushmi — Performance-focused digital marketer who plans, runs, and optimizes social and paid campaigns for construction companies, resorts, cafes, and local brands in Nepal." />
   <meta name="keywords" content="Digital Marketer, Social Media Marketing, Meta Ads, Digital Marketing Portfolio, Nepal" />
   <meta name="theme-color" content="#0366d6" />
@@ -24,7 +24,8 @@
   <link rel="canonical" href="https://biplapkushmi.com/" />
   <link rel="manifest" href="/manifest.webmanifest" />
 
-  <link rel="icon" href="/favicon.ico" />
+  <link rel="icon" href="/assets/icons/favicon.svg" />
+  <link rel="apple-touch-icon" href="/assets/icons/favicon.svg" />
   <link rel="stylesheet" href="/css/styles.css" />
 
   <script type="application/ld+json">
@@ -73,8 +74,8 @@
         <div class="hero-content">
           <p class="eyebrow">Hello — I'm</p>
           <h1 class="hero-title">Biplap Kushmi</h1>
-          <p class="hero-sub">Performance-focused digital marketer</p>
-          <p class="hero-lead">I plan, run, and optimize social and paid campaigns for construction firms, resorts, cafes, and local brands. I focus on audience targeting, creative strategy, campaign optimization, and clear analytics reporting.</p>
+          <p class="hero-sub">Digital Marketer</p>
+          <p class="hero-lead">Performance-focused digital marketer. I plan, run, and optimize social and paid campaigns for construction firms, resorts, cafes, and local brands. I focus on audience targeting, creative strategy, campaign optimization, and clear analytics reporting.</p>
           <p class="hero-ctas">
             <a class="btn primary" href="#work">View my work</a>
             <a class="btn ghost" href="#contact">Contact me</a>
@@ -87,7 +88,8 @@
         </div>
 
         <div class="hero-visual">
-          <div id="hero-3d" class="hero-3d" aria-hidden="false">
+          <!-- three.js container - lazy-loaded by main.js -->
+          <div id="hero-3d" class="hero-3d" aria-hidden="true">
             <noscript>
               <img src="/assets/img/profile-placeholder.svg" alt="Profile visual placeholder" />
             </noscript>
@@ -120,7 +122,7 @@
         </article>
         <article class="card">
           <h3>Meta Ads Management</h3>
-          <p>Campaign setup, Creative testing, audience targeting and ongoing optimization across Facebook & Instagram.</p>
+          <p>Campaign setup, creative testing, audience targeting and ongoing optimization across Facebook & Instagram.</p>
         </article>
         <article class="card">
           <h3>Campaign Optimization</h3>
@@ -172,7 +174,7 @@
       <h2>Projects & Case Studies</h2>
       <p class="lead">Below are case study templates. Replace placeholders with project details and images. No client names or fabricated metrics are used.</p>
       <div class="grid work-grid">
-        <!-- Project 1 (placeholder) -->
+        <!-- Project placeholders -->
         <article class="project-card">
           <img src="/assets/img/project-placeholder-1.jpg" alt="Project visual placeholder" loading="lazy">
           <div class="project-body">
@@ -186,7 +188,6 @@
           </div>
         </article>
 
-        <!-- Project 2 (placeholder) -->
         <article class="project-card">
           <img src="/assets/img/project-placeholder-2.jpg" alt="Project visual placeholder" loading="lazy">
           <div class="project-body">
@@ -241,7 +242,9 @@
       <h2>Contact</h2>
       <p>If you’d like to discuss a project, send a message or email me at <a href="mailto:biplapkushmi@gmail.com">biplapkushmi@gmail.com</a> or call/WhatsApp at <a href="tel:+9779749723421">+977 9749723421</a>.</p>
 
-      <form id="contact-form" class="contact-form" method="POST" action="https://formspree.io/f/your-id">
+      <form id="contact-form" class="contact-form" name="contact-form" method="POST" data-netlify="true" netlify-honeypot="hp">
+        <input type="hidden" name="form-name" value="contact-form">
+
         <label>
           Name
           <input name="name" type="text" required>
@@ -286,7 +289,6 @@
     <div class="container copyright">© <span id="year"></span> Biplap Kushmi</div>
   </footer>
 
-  <script type="module" src="/js/three-scene.js"></script>
   <script src="/js/main.js" defer></script>
   <script src="/js/contact.js" defer></script>
 </body>
